@@ -21,9 +21,17 @@ export const HeaderContainer = styled.header`
 
   div {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 
-    color: ${(props) => props.theme['gray-200']};
+    color: ${(props) => props.theme['gray-300']};
+
+    svg {
+      transition: color 100ms;
+      &:hover {
+        size: 45px;
+        color: ${(props) => props.theme.white};
+      }
+    }
   }
 `
 
@@ -56,7 +64,7 @@ export const HeaderNavegation = styled.main`
   padding: 0.5rem 3rem;
 
   border-radius: 12px;
-  /* border: 1px solid ${(props) => props.theme['gray-200']}; */
+  /* border: 1px solid ${(props) => props.theme['gray-300']}; */
 
   nav {
     &:hover {
