@@ -11,9 +11,11 @@ export function AboutMe() {
         <h1>João Gabriel Dourado</h1>
         <h6>Desenvolvedor de Software | Engenheiro Automotivo</h6>
         <section>
-          {'>'} Sou desenvolvedor há mais 4 anos, tenho foco no desenvolvimento
-          de soluções com base em conhecimentos adquiridos em diversas áreas da
-          tecnologia da informação e engenharia.
+          Iniciei minha carreira no ramo da tecnologia em 2018 como
+          desenvolvedor Full Stack com tecnologias JavaScript, desde então
+          transitei entre algumas áreas da TI, desenvolvimento, QA e gestão. No
+          momento estou em busca de novas oportunidades para realocação no
+          mercado.
         </section>
       </AboutContent>
     </AboutMeContainer>

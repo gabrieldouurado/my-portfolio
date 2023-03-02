@@ -3,9 +3,8 @@ import styled from 'styled-components'
 export const AboutMeContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding-top: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+
+  padding: 2rem 0;
 
   gap: 2rem;
 `
