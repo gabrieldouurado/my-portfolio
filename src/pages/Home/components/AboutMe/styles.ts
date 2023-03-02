@@ -4,7 +4,7 @@ export const AboutMeContainer = styled.div`
   display: flex;
   justify-content: center;
 
-  padding: 2rem 0;
+  padding: 2rem 2rem;
 
   gap: 2rem;
 `
