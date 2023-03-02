@@ -5,7 +5,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
 
-  height: 4.5rem;
+  height: 4rem;
 
   padding: 0 1.5rem;
 
@@ -54,21 +54,7 @@ export const Circle = styled.div<CircleProps>`
   background: ${(props) => props.theme[CIRCLE_COLORS[props.circleColor]]};
 `
 
-export const HeaderNavegation = styled.main`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  gap: 3rem;
-
-  padding: 0.5rem 3rem;
-
-  border-radius: 12px;
-  /* border: 1px solid ${(props) => props.theme['gray-300']}; */
-
-  nav {
-    &:hover {
-      font-weight: bold;
-    }
-  }
+export const TabsContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 `
