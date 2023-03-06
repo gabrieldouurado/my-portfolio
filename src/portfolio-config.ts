@@ -3,4 +3,4 @@ export const USER_INFOS = {
   github: 'gabrieldouurado',
 }
 
-export const AVAILABLE_REPOS = ['coffee-delivery']
+export const AVAILABLE_REPOS = ['coffee-delivery', 'github-blog']
