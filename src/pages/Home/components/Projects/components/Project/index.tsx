@@ -4,14 +4,19 @@ import { ProjectContainer, ProjectTitle } from './styles'
 interface ProjectProps {
   projectTitle: string
   repositoryName: string
+  littleDescription: string
 }
 
 const { github } = USER_INFOS
 
-export function Project({ projectTitle, repositoryName }: ProjectProps) {
+export function Project({
+  projectTitle,
+  repositoryName,
+  littleDescription,
+}: ProjectProps) {
   return (
     <ProjectContainer
-      littleDescription="ola"
+      littleDescription={littleDescription}
       onClick={() => {
         window.open(`https://github.com/${github}/${repositoryName}`)
       }}

@@ -26,6 +26,7 @@ export function Projects() {
               key={repo.repositoryName}
               projectTitle={repo.projectName}
               repositoryName={repo.repositoryName}
+              littleDescription={repo.littleDescription}
             />
           )
         })}

@@ -39,8 +39,8 @@ export const ProjectContainer = styled.div<ProjectContainerProps>`
       margin-top: -14rem;
 
       &::after {
-        content: ${(props) => props.littleDescription};
-        text-align: justify;
+        content: '${(props) => props.littleDescription}';
+        text-align: center;
         padding-top: 0.5rem;
         font-size: 0.875rem;
         margin-bottom: -3.75rem;
