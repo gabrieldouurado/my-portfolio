@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 interface ProjectContainerProps {
-  projectTitle: string
+  littleDescription: string
 }
 
 export const ProjectContainer = styled.div<ProjectContainerProps>`
@@ -26,6 +26,8 @@ export const ProjectContainer = styled.div<ProjectContainerProps>`
     border: transparent;
     box-shadow: 0 0 0 2px ${(props) => props.theme['purple-900']};
 
+    cursor: pointer;
+
     div {
       display: flex;
       flex-direction: column;
@@ -37,7 +39,7 @@ export const ProjectContainer = styled.div<ProjectContainerProps>`
       margin-top: -14rem;
 
       &::after {
-        content: ${(props) => props.projectTitle};
+        content: ${(props) => props.littleDescription};
         text-align: justify;
         padding-top: 0.5rem;
         font-size: 0.875rem;

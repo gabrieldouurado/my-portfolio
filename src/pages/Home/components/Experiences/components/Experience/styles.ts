@@ -68,6 +68,7 @@ export const ButtonView = styled.div`
 
     &:hover {
       font-weight: bold;
+      cursor: pointer;
     }
   }
 `

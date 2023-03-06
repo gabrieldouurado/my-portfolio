@@ -28,6 +28,7 @@ export const HeaderContainer = styled.header`
     svg {
       transition: color 100ms;
       &:hover {
+        cursor: pointer;
         size: 45px;
         color: ${(props) => props.theme.white};
       }
