@@ -14,6 +14,7 @@ export function Projects() {
 
   useEffect(() => {
     fetchRepositories()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
@@ -26,6 +27,7 @@ export function Projects() {
               key={repo.repositoryName}
               projectTitle={repo.projectName}
               repositoryName={repo.repositoryName}
+              defaultBranch={repo.defaultBranch}
               littleDescription={repo.littleDescription}
             />
           )

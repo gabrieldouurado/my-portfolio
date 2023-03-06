@@ -4,6 +4,7 @@ import { ProjectContainer, ProjectTitle } from './styles'
 interface ProjectProps {
   projectTitle: string
   repositoryName: string
+  defaultBranch: string
   littleDescription: string
 }
 
@@ -12,6 +13,7 @@ const { github } = USER_INFOS
 export function Project({
   projectTitle,
   repositoryName,
+  defaultBranch,
   littleDescription,
 }: ProjectProps) {
   return (
@@ -22,7 +24,7 @@ export function Project({
       }}
     >
       <img
-        src={`https://raw.githubusercontent.com/${github}/${repositoryName}/master/.portfolio/assets/pagina-inicial.png`}
+        src={`https://raw.githubusercontent.com/${github}/${repositoryName}/${defaultBranch}/.portfolio/assets/pagina-inicial.png`}
         alt=""
       />
       <ProjectTitle>{projectTitle}</ProjectTitle>
