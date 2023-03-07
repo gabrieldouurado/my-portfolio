@@ -26,7 +26,7 @@ export function SkillsOverflow() {
         </Skill>
         <Skill
           skillArea="Outros"
-          skills={['Azure DevOps', 'PostgresSQL', 'Jest', 'CI/CD']}
+          skills={['Azure DevOps', 'PostgreSQL', 'Jest', 'CI/CD']}
         >
           <DotsThreeOutline size={58} weight="light" />
         </Skill>

@@ -1,0 +1,13 @@
+{
+  "project-name": "Portfólio",
+  "little-description": "Meu portfólio de projetos",
+  "full-description": "Projeto construido usando ReactJS. O ideia por trás do projeto é mostrar minhas experiencias profissionais e também os projetos que eu já construi",
+  "screenshots": [
+    {
+      "name": "pagina-inicial",
+      "path": "/assets/pagina-inicial.png"
+    }
+  ],
+  "stack": ["ReactJS", "typescript", "Styled-Components", "ContextAPI", "React Hooks"],
+  "tags": ["frontend"]
+}   
