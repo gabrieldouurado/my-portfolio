@@ -1,11 +1,11 @@
 import { LinkedinLogo, GithubLogo, WhatsappLogo } from 'phosphor-react'
 import { Tab } from './components/Tab'
-import { Circle, HeaderContainer, TabsContainer } from './styles'
+import { Circle, HeaderBar, HeaderContainer, TabsContainer } from './styles'
 
 export function Header() {
   return (
-    <>
-      <HeaderContainer>
+    <HeaderContainer>
+      <HeaderBar>
         <section>
           <Circle circleColor="red" />
           <Circle circleColor="yellow" />
@@ -35,12 +35,12 @@ export function Header() {
             }}
           />
         </div>
-      </HeaderContainer>
+      </HeaderBar>
       <TabsContainer>
         <Tab>Sobre Mim</Tab>
         <Tab activeTab>Experiencias</Tab>
         <Tab>Projetos</Tab>
       </TabsContainer>
-    </>
+    </HeaderContainer>
   )
 }
