@@ -1,22 +1,18 @@
+import { USER_INFOS } from '../../../../portfolio-config'
 import { AboutContent, AboutMeContainer, MyAvatar } from './styles'
 
 export function AboutMe() {
+  const { name, title, description, github } = USER_INFOS
   return (
     <AboutMeContainer>
       <MyAvatar>
-        <img src="https://github.com/gabrieldouurado.png" alt="" />
+        <img src={`https://github.com/${github}.png`} alt="" />
       </MyAvatar>
       <AboutContent>
         <h4>Olá, meu nome é</h4>
-        <h1>João Gabriel Dourado</h1>
-        <h6>Desenvolvedor de Software | Engenheiro Automotivo</h6>
-        <section>
-          Iniciei minha carreira no ramo da tecnologia em 2018 como
-          desenvolvedor Full Stack com tecnologias JavaScript, desde então
-          transitei entre algumas áreas da TI, desenvolvimento, QA e gestão. No
-          momento estou em busca de novas oportunidades para realocação no
-          mercado.
-        </section>
+        <h1>{name}</h1>
+        <h6>{title}</h6>
+        <section>{description}</section>
       </AboutContent>
     </AboutMeContainer>
   )
